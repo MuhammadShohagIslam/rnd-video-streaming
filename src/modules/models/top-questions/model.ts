@@ -1,6 +1,6 @@
 import { getDB } from "../../db/mongo";
 
-const collectionName = "quizs";
+const collectionName = "top-questions";
 
 const getCollection = () => {
     const db = getDB();
@@ -8,7 +8,7 @@ const getCollection = () => {
     return collection;
 };
 const _ = {
-    Quizs: getCollection(),
+    topQuestions: getCollection(),
     name: collectionName,
 };
 
